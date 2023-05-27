@@ -1,0 +1,157 @@
+/*
+font-stlys
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a,
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --main-bg-color: #f0f2f5;
+  --primary-color: #1977f2;
+  --green-color: #4ab837;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 10px;
+  padding-block: 5px;
+  background-color: #ffff;
+  align-items: center;
+}
+
+.fb-logo {
+  height: 60px;
+}
+
+.fb-logo img {
+  height: 100%;
+}
+
+.fb-search {
+  position: relative;
+}
+
+input[type="search"] {
+  width: 500px;
+  border: none;
+  background: #f0f2f5;
+  height: 40px;
+  border-radius: 40px;
+  width: 600px;
+  color: hsl(0, 0%, 0%);
+  padding: 5px 5px 5px 30px;
+}
+i.fa.fa-search {
+  position: absolute;
+  top: 12px;
+  left: 6px;
+}
+.fb-menu {
+  display: flex;
+  gap: 20px;
+}
+.menu-icon {
+  background: #d8dadf;
+  padding: 15px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+/*main login section*/
+.main-login {
+  height: 68vh;
+  background: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 5rem;
+}
+.login-footer {
+  background: #fff;
+  height: 40vh;
+}
+.login-parent {
+  display: flex;
+  gap: 10rem;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  padding: 10px;
+  text-align: center;
+}
+.login-form * {
+  margin-block: 10px;
+}
+.fb-login p {
+  font-size: 1.5rem;
+}
+.login-logo-contain {
+  height: 100px;
+  position: relative;
+}
+
+.login-logo-contain img {
+  height: 100%;
+  position: absolute;
+  left: -32px;
+}
+.login-form {
+  background: #ffff;
+}
+
+.loggin {
+  background: var(--primary-color);
+  border: none;
+  padding-block: 10px;
+  border-radius: 5px;
+}
+.create {
+  background: var(--green-color);
+  border: none;
+  padding-block: 10px;
+  border-radius: 5px;
+  width: 200px;
+  margin: auto;
+}
+input[type="text"] {
+  height: 50px;
+  margin-block: 7px;
+  border: 1px solid #dddfe2;
+}
